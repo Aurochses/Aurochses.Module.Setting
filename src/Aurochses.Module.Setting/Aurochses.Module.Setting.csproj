@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <!-- Required in both test/product projects. This is a temporary workaround for https://github.com/Microsoft/vstest/issues/800 -->
+    <DebugType>Full</DebugType>
+    <Version>2.0.0-alpha</Version>
+    <Authors>Aurochses</Authors>
+    <Description>Module for Setting based on Entity Framework Core.</Description>
+    <Copyright>Aurochses 2018</Copyright>
+    <PackageLicenseUrl>https://github.com/Aurochses/Aurochses.Module.Setting/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Aurochses/Aurochses.Module.Setting/wiki</PackageProjectUrl>
+    <PackageIconUrl>https://www.gravatar.com/avatar/cb5925a77e502401f95bf2738b123994?s=64</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Aurochses/Aurochses.Module.Setting</RepositoryUrl>
+    <PackageTags>Setting Module Autofac EntityFrameworkCore</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <DocumentationFile>bin\Release\netstandard2.0\Aurochses.Module.Setting.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <DocumentationFile>bin\Debug\netstandard2.0\Aurochses.Module.Setting.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aurochses.Data.EntityFrameworkCore" Version="2.0.4" />
+    <PackageReference Include="Aurochses.Module.Autofac.EntityFrameworkCore" Version="2.0.0" />
+    <PackageReference Include="Aurochses.Module.Business.Autofac.EntityFrameworkCore" Version="2.0.0" />
+    <PackageReference Include="Aurochses.Module.Data.Autofac" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+  </ItemGroup>
+
+</Project>
