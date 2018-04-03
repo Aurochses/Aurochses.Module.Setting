@@ -5,7 +5,7 @@
     
     <!-- Required in both test/product projects. This is a temporary workaround for https://github.com/Microsoft/vstest/issues/800 -->
     <DebugType>Full</DebugType>
-    <Version>2.0.0-alpha</Version>
+    <Version>2.0.1-alpha</Version>
     <Authors>Aurochses</Authors>
     <Description>Module for Setting based on Entity Framework Core.</Description>
     <Copyright>Aurochses 2018</Copyright>
@@ -29,11 +29,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aurochses.Data.EntityFrameworkCore" Version="2.0.4" />
+    <PackageReference Include="Aurochses.Data.EntityFrameworkCore" Version="2.0.5" />
+    <PackageReference Include="Aurochses.Data.Extensions.MsSql" Version="2.0.0" />
     <PackageReference Include="Aurochses.Module.Autofac.EntityFrameworkCore" Version="2.0.0" />
     <PackageReference Include="Aurochses.Module.Business.Autofac.EntityFrameworkCore" Version="2.0.0" />
     <PackageReference Include="Aurochses.Module.Data.Autofac" Version="2.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.2" />
   </ItemGroup>
 
 </Project>
